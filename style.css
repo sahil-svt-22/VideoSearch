@@ -1,0 +1,207 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    background : linear-gradient(to bottom , rgb(87, 129, 145) , black , skyblue);
+    border-top: 40px groove rgba(0, 0, 0, 0.412);
+    border-radius: 48%;
+    position: relative;
+    margin-top: 110px;
+}
+
+
+#nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #0014243e;
+    position: fixed;
+    justify-content: space-around;
+    z-index: 999;
+    top: 0;
+    gap: 400px;
+    backdrop-filter: blur(100px);
+  }
+  
+  .logo{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 20px; 
+    filter: drop-shadow(rgb(11, 11, 11) 0.5rem 0.5rem 20px);
+
+  }
+  
+  .logo  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  
+  .optn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+    filter: drop-shadow(rgb(11, 11, 11) 1rem 1rem 10px);
+  }
+  
+  .optn h4 {
+    color: whitesmoke;
+    font-weight: 1000px;
+    font-size: 1rem;
+  }
+  
+  .logo2 {
+    margin-left: 10px;
+  
+  }
+  
+  #nav h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.15vw;
+  }
+
+
+
+
+
+.heading{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+#userInput{
+    background: whitesmoke;
+    border: none;
+    border: 2px groove black;
+    text-align: center;
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    filter: drop-shadow(black -0.5rem 0.7rem 10px);
+}
+
+#submitButton{
+    margin-top: 10px;
+    background-color: black;
+    color: antiquewhite;
+    border: none;
+    border: 2px groove black;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    filter: drop-shadow(black -0.8rem 0.8rem 20px);
+    margin-bottom: 20px;
+}
+
+.video-container{
+    width: 90%;
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.506);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow-y: scroll;
+    gap: 20px;
+    padding-top: 420px;
+    padding-bottom: 20px;
+}
+
+.row1 , .row2 , .row3 , .row4 , .row5 {
+    width: 600px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.video-item{
+    height: 300px;
+    width: 600px ;
+    object-fit: cover;
+}
+
+ @media ( max-width: 456px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+        background : linear-gradient(to bottom , rgb(94, 142, 161) , black ,rgb(8, 94, 95) , rgb(3, 49, 68));
+        border-top:25px groove rgba(0, 0, 0, 0.398) ;
+        border-radius: 280px;
+    }
+    
+    .heading{
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+    
+    #userInput{
+        background: whitesmoke;
+        border: none;
+        border: 2px groove black;
+        text-align: center;
+        height: 25px;
+        width: 300px;
+        border-radius: 20px;
+        filter: drop-shadow(black -0.5rem 0.7rem 10px);
+    }
+    
+    #submitButton{
+        margin-top: 10px;
+        background-color: black;
+        color: antiquewhite;
+        border: none;
+        border: 2px groove black;
+        text-align: center;
+        height: 30px;
+        width: 100px;
+        border-radius: 20px;
+        filter: drop-shadow(black -0.8rem 0.8rem 20px);
+        margin-bottom: 20px;
+    }
+    
+    .video-container{
+        width: 95%;
+        height: 2200px;
+        background-color: rgba(0, 0, 0, 0.506);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        overflow-y: scroll;
+        gap: 20px;
+        padding-top: 50px;
+    }
+    
+    .row1 , .row2 , .row3, .row4 , .row5 {
+        width: 200px;
+        height: 800px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .video-item{
+        height: 200px;
+        width: 250px ;
+        object-fit: cover;
+    }
+    
+}
